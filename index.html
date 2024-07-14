@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Plan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-...your-integrity-code-here..." crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="brand-title"> < HMH > <strong>NP</strong></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </div>
+    <div class="navbar-links">
+        <ul class="filters">
+            <li> <button id="all-filter" class="active">All</button></li>
+            <li> <button id="active-filter">Active</button></li>
+            <li><button id="completed-filter">Completed</button></li>
+            <li><button id="due-soon-filter">Due Soon</button></li>
+            <li><button id="overdue-filter">Overdue</button></li>
+            <li><button id="sort-date">Sort by Date</button></li>
+            <li><button id="sort-priority">Sort by Priority</button></li>
+            <li><a target="_blank" href="https://hafizmudassirhusain.netlify.app/">Developer</a></li>
+
+        </ul>
+    </div>
+   
+    
+    
+    
+    
+
+    <!-- ================================================================== -->
+    <div class="container">
+        <i id="dark-mode-toggle" class="fa-solid fa-circle"></i>
+        <h1> Next Plan</h1>
+        <input type="text" id="search-input" placeholder="Search tasks...">
+
+        <div class="inp-btn-allactive">
+            <div class="input-btncombine">
+                <div class="input-container">
+                    <input type="text" id="todo-input" placeholder="Add a new task...">
+                    <input type="date" id="due-date-input">
+                    <select id="priority-input">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <select id="category-input">
+                        <option value="work">Work</option>
+                        <option value="personal">Personal</option>
+                    </select>
+                    <button id="add-btn">Add</button>
+                </div>
+                <div class="filters filter1">
+                    <button id="all-filter" class="active">All</button>
+                    <button id="active-filter">Active</button>
+                    <button id="completed-filter">Completed</button>
+                    <button id="due-soon-filter">Due Soon</button>
+                    <button id="overdue-filter">Overdue</button>
+                    <button id="sort-date">Sort by Date</button>
+                    <button id="sort-priority">Sort by Priority</button>
+                </div>
+            </div>
+
+            <div class="collapsible-sectionsOne">
+                <div class="collapsible-section">
+                    <button class="collapsible-toggle">All Tasks</button>
+                    <ul id="all-tasks" class="task-list"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapsible-sections secondlast-list">
+            <div class="collapsible-section thirdlast-list">
+                <button class="collapsible-toggle">Active Tasks</button>
+                <ul id="active-tasks" class="task-list"></ul>
+            </div>
+            <div class="collapsible-section thirdlast-list">
+                <button class="collapsible-toggle">Completed Tasks</button>
+                <ul id="completed-tasks" class="task-list"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
